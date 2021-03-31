@@ -3,9 +3,7 @@ html {
   color: white;
   font-family: "IBM Plex Mono", monospace;
 }
-h1 {
-  font-family: "IBM Plex Mono", monospace;
-}
+
 .card {
   width: fit-content;
 }
@@ -13,12 +11,10 @@ h1 {
   text-align: left;
 }
 #text {
-  font-family: "IBM Plex Mono", monospace;
   display: inline-block;
   letter-spacing: 2px;
 }
 .text2 {
-  font-family: "IBM Plex Mono", monospace;
   display: inline-block;
   letter-spacing: 2px;
 }
@@ -38,4 +34,47 @@ h1 {
   50% {
     background-color: #4f46e5;
   }
+}
+@media (max-width: 1024px) {
+  #cursor {
+    height: 30px;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .drop {
+    margin-top: 10px;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.hamburger {
+  display: hidden;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }

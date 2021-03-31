@@ -69,3 +69,8 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+const lst=document.querySelector('#nav-menu')
+function myFunction(x) {
+    x.classList.toggle("change");
+    lst.classList.toggle("drop");
+  }
