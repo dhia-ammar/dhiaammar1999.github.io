@@ -27,7 +27,7 @@ h1 {
   vertical-align: middle;
   width: 3px;
   height: 36px;
-  background-color: #d1d5db;
+  background-color: #4f46e5;
   animation: blink 0.75s step-end infinite;
 }
 @keyframes blink {
@@ -36,6 +36,6 @@ h1 {
     background-color: transparent;
   }
   50% {
-    background-color: #d1d5db;
+    background-color: #4f46e5;
   }
 }
