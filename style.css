@@ -1,0 +1,41 @@
+html {
+  background-color: black;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+}
+h1 {
+  font-family: "IBM Plex Mono", monospace;
+}
+.card {
+  width: fit-content;
+}
+#container {
+  text-align: left;
+}
+#text {
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.text2 {
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 36px;
+  background-color: #d1d5db;
+  animation: blink 0.75s step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #d1d5db;
+  }
+}
